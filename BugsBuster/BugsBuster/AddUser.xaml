@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:bugsbuster="clr-namespace:BugsBuster"
+             x:Class="BugsBuster.AddUser"
+             Title="Add New User"
+             BackgroundColor="White">
+
+    <StackLayout>
+        <Grid Margin="20,0,20,0" VerticalOptions="CenterAndExpand" Padding="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="0">
+                <bugsbuster:CustomEntry Placeholder="First Name" TextColor="Black" x:Name="txtFirstName" EntryCornerRadius="20" EntryBorderColor="Black" PlaceholderColor="Gray"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1">
+                <bugsbuster:CustomEntry Placeholder="Last Name" TextColor="Black" x:Name="txtLastName" EntryCornerRadius="20" EntryBorderColor="Black" PlaceholderColor="Gray"/>
+            </StackLayout>
+            <StackLayout Grid.Row="2">
+                <bugsbuster:CustomEntry Placeholder="Username" TextColor="Black" x:Name="txtUsername" EntryCornerRadius="20" EntryBorderColor="Black" PlaceholderColor="Gray"/>
+            </StackLayout>
+            <StackLayout Grid.Row="3">
+                <bugsbuster:CustomEntry Placeholder="Password" IsPassword="True" TextColor="Black" x:Name="txtPassword" EntryCornerRadius="20" EntryBorderColor="Black" PlaceholderColor="Gray"/>
+            </StackLayout>
+            <StackLayout Grid.Row="4">
+                <bugsbuster:CustomEntry Placeholder="Email" TextColor="Black" x:Name="txtEmail" EntryCornerRadius="20" EntryBorderColor="Black" PlaceholderColor="Gray"/>
+            </StackLayout>
+            <StackLayout Grid.Row="5">
+                <bugsbuster:CustomEntry Placeholder="Contact Number" TextColor="Black" x:Name="txtContactNo" EntryCornerRadius="20" EntryBorderColor="Black" PlaceholderColor="Gray"/>
+            </StackLayout>
+            <StackLayout Grid.Row="6">
+                <Button
+                    x:Name="Button1"
+                    Text="Add"
+                    HorizontalOptions="CenterAndExpand"
+                    TextColor="Black"
+                    WidthRequest="200"
+                    BorderColor="Black"
+                    BorderWidth="1.5"
+                    CornerRadius="30"
+                    BackgroundColor="Transparent"
+                    Margin="0,30"
+                    Clicked="Add_User"/>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>

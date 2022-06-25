@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BugsBuster.Homepage"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Admin" TextColor="Black"/>
+            <Button
+            HorizontalOptions="CenterAndExpand"
+            Text="Log Out"
+            TextColor="Black"
+            BackgroundColor="White"
+            BorderWidth="1.5"
+            CornerRadius="50"
+            FontSize="16"
+            WidthRequest="200"
+            VerticalOptions="EndAndExpand"
+            Clicked="Log_Out"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
