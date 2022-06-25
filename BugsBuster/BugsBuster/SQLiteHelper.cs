@@ -40,5 +40,10 @@ namespace BugsBuster
         {
             return db.DeleteAllAsync<RegUserTable>();
         }
+
+        public Task<List<RegUserTable>> Search(string search)
+        {
+            return db.Table<RegUserTable>().Where(p=>p.UserName.StartsWith(search)).ToListAsync();
+        }
     }
 }

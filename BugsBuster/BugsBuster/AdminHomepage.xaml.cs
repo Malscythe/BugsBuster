@@ -58,5 +58,10 @@ namespace BugsBuster
                 usersCV.ItemsSource = await App.MyDatabase.ReadUsers();
             }
         }
+
+        private async void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            usersCV.ItemsSource = await App.MyDatabase.Search(e.NewTextValue);
+        }
     }
 }

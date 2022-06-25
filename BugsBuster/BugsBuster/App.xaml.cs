@@ -23,7 +23,7 @@ namespace BugsBuster
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new AdminHomepage());
         }
 
         protected override void OnStart()
