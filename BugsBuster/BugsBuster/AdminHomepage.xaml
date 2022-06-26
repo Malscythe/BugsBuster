@@ -38,6 +38,7 @@
                 <SearchBar Placeholder="Search username"
                            TextChanged="SearchBar_TextChanged"
                            TextColor="White"
+                           CancelButtonColor="White"
                            PlaceholderColor="DarkGray"
                            BackgroundColor="#243665"
                            Margin="0,0,0,20"/>
@@ -99,8 +100,18 @@
             <FontImageSource FontFamily="FAS" Glyph="&#xf007;"/>
         </ContentPage.IconImageSource>
         <ContentPage.Content>
-            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-                <Label TextColor="Black" Text="Page1"/>
+            <StackLayout HorizontalOptions="Center">
+                <Button Text="Log Out"
+                        Grid.Row="4"
+                        Grid.ColumnSpan="2"
+                        TextColor="OrangeRed"
+                        WidthRequest="200"
+                        VerticalOptions="EndAndExpand"
+                        FontSize="20"
+                        CornerRadius="30"
+                        BackgroundColor="Transparent"
+                        Margin="0, 30"
+                        Clicked="Log_Out"/>
             </StackLayout>
         </ContentPage.Content>
     </ContentPage>

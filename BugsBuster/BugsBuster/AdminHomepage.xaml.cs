@@ -63,5 +63,10 @@ namespace BugsBuster
         {
             usersCV.ItemsSource = await App.MyDatabase.Search(e.NewTextValue);
         }
+
+        private async void Log_Out(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
+        }
     }
 }
